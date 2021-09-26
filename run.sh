@@ -1,4 +1,6 @@
 clear;
-gcc ex1.c -o ex1;
-./ex1
+
+gcc ex2.c -o ex2;
+./ex2
+
 
