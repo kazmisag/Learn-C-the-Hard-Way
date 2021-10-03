@@ -4,7 +4,7 @@
 
 int main (int argc, char *argv[])
 {
-	int a = 2, b = 4; // initialize variables a at 2nd bit, b at 3rd
+	int a = 9, b = -5; // initialize variables a at 2nd bit, b at 3rd
 	int c; // result holder
 
 	c = a & b;	// AND compare bits in both bytes
