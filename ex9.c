@@ -22,9 +22,9 @@ int main(int argc, char *argv[])
     numbers[2] = 3;
     numbers[3] = 4;
     // setup the name
-    name[0] = 'Z';
-    name[1] = 'e';
-    name[2] = 'd';
+    name[0] = 'a';
+    name[1] = 'b';
+    name[2] = 'c';
     name[3] = '\0';
     
     // then print them out initialized
