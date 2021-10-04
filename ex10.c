@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     //go throuh each string in argv
     // why am i skipping argv[0]
 
-    for(int i=1; i<argc; i++)
+    for(int i=0; i<argc; i++)
     {
         printf("arg %d: %s\n", i, argv[i]);
     }
@@ -17,13 +17,13 @@ int main(int argc, char *argv[])
     //Lets make our own array of strings
     char *states[]= {
         "California", "Oregon",
-        "Washington", "Texas"
+        "Washington", "Texas", "\0"
         };
     
-    int num_states = 4;
-    for(i = 0; i<num_states; i++)
+    int num_states = 5;
+    for(i = 1; i<argc; i++)
     {
-        printf("states %d: %S", i, states[i]);
+        printf("states %d: %s\n", i, states[i]=argv[i]); // assign inputs
     }
     
     return 0;
