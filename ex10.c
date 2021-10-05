@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     int num_states = 5;
     for(i = 1; i<argc; i++)
     {
-        printf("states %d: %s\n", i, states[i]=argv[i]); // assign inputs
+        printf("states %d: %s\n", i, states[i]); // assign inputs
     }
     
     return 0;
