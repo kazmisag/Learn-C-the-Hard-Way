@@ -7,11 +7,17 @@ int main(int argc, char *argv[])
     int i = 0;
 
     //go throuh each string in argv
-    // why am i skipping argv[0]
+    // why am i skipping argv[0]????
 
     for(int i=0; i<argc; i++)
     {
-        printf("arg %d: %s\n", i, argv[i]);
+        if(i==0 && argc==1)
+        {  
+            printf("Only one arg %d: %s\n", i, argv[i]);
+            //break;
+        }
+        else
+            printf("arg %d: %s\n", i, argv[i]);
     }
 
     //Lets make our own array of strings
