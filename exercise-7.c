@@ -13,9 +13,16 @@ command line when you compile your program.*/
 
 int main (void)
 {
+
+#ifdef Full_Name //&& DOB
+printf("%s ", Full_Name);
+#else
+    printf("You didn't define any Macros on Cmd Prompt\n");
+
     printf("%s\n", PRINT(name));
     print_msg(f);
     print_msg(l);
-   
+
+#endif
     return 0;
 }
