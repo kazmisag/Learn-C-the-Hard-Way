@@ -4,8 +4,8 @@
 
 int main(int argc, char *argv[])
 {
-    if(argc != 2){
-        printf("You need more need one argument\n");
+    if(argc != 2){//check if there are more than 2 input arguments
+        printf("Error! You need one argument\n");
         // This is how you abort program by returning 1/true
         return 1;
     }
@@ -32,12 +32,12 @@ int main(int argc, char *argv[])
             
             case 'o':
             case 'O':
-                printf("%d: 'O'", i);
+                printf("%d: 'O'\n", i);
                 break;
             
             case 'u':
             case 'U':
-                printf("%d: 'U'", i);
+                printf("%d: 'U'\n", i);
                 break;
             
             case 'y':
@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
                 if (i>2)
                 {
                     //Its only sometimes Y
-                    printf("%d: 'Y'", i);
+                    printf("%d: 'Y'\n", i);
                 }
                 break;
                 
                 default:
-                    printf("%d: %c is not a vowel\n", i, letter);
+                    printf("\n%d: %c is not a vowel\n", i, letter);
         }//end switch
     }//end for loop
         
