@@ -28,6 +28,15 @@ int main (int argc, char *argv[])
 	c = b >> 3;	// shift a position right by 3 bits
 	printf("b >> 3 = %d\n",c);
 
+	a = 4, b = 3;
 
+	a= a ^ b;
+	printf("a = a ^ b = %d\n", a);
+
+	b = a ^ b;
+	printf("b = a ^ b = %d\n", b);
+
+	a = a ^ b;
+	printf("a = a ^ b = %d\n", a);
 return 0;
 }
